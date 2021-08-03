@@ -12,7 +12,7 @@
 
 ## Photos
 #### 7.3 Calculator
-![Calculator](../img/t7k3.png)
+![Calculator](/img/t7k3.png)
 #### 7.4 Notebook
-![Notebook](../img/t7k4.png)
+![Notebook](/img/t7k4.png)
 
