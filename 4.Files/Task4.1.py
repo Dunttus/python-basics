@@ -1,7 +1,7 @@
 # -- coding: cp1252 --
-tiedosto = open("faktat.txt","r")
-sisalto = tiedosto.read()
+file = open("memo.txt","r")
+contents = file.read()
 
-print("Tiedostosta luettiin teksti: ",sisalto)
+print("Text was read from file: ",contents)
 
-tiedosto.close()
+file.close()

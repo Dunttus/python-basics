@@ -1,3 +1,3 @@
-def tulosta(lause):
-    print("Saatiin syöte:",lause)
-    print("Syötteen pituus on",len(lause),"merkkiä.")
+def printing(sentence):
+    print("Feed received:",sentence)
+    print("The length of the input is",len(sentence),"characters.")

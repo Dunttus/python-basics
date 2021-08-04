@@ -1,13 +1,13 @@
 # -- coding: cp1252 --
-tiedosto = open("merkkijonoja.txt","r")
+tiedosto = open("passwords.txt","r")
 sisalto = tiedosto.readlines()
 
 for i in sisalto:
     i=i[:-1]
     if i.isalnum():
-        print(i,"kelpaa salasanaksi.")
+        print(i,"is valid as a password.")
     else:
-        print(i,"sisältää virheellisiä merkkejä.")
+        print(i,"contains invalid characters.")
 
         
 tiedosto.close()

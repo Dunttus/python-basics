@@ -1,74 +1,74 @@
 # -*- coding: cp1252 -*-
 import random
 
-tasapelit = 0
-haviot = 0
-voitot = 0
-kierros = 0
+draws = 0
+loses = 0
+wins = 0
+round = 0
 
 
 while True:
-    lukuarvo = input("Jalka, Ydinase vai Torakka? (Lopeta lopettaa):")
+    number_value = input("Stone, Paper vai Scissors? (quit ends):")
 
-    if lukuarvo == "Jalka":
-        luku = random.randint(1,3)
-        print("Sinä valitsit:", lukuarvo)
-        if luku == 1:
-            print("tietokone valitsi: Jalka")
-            print("Tasapeli!")
-            kierros += 1
-            tasapelit += 1
-        elif luku == 2:
-            print("tietokone valitsi: Ydinase")
-            print("Hävisit!")
-            kierros += 1
-            haviot += 1
+    if number_value == "Stone":
+        value = random.randint(1,3)
+        print("You chose:", number_value)
+        if value == 1:
+            print("Computer chose: Stone")
+            print("Draw!")
+            round += 1
+            draws += 1
+        elif value == 2:
+            print("Computer chose: Paper")
+            print("You lost!")
+            round += 1
+            loses += 1
         else:
-            print("tietokone valitsi: Torakka")
-            print("Voitit!")
-            kierros += 1
-            voitot += 1
+            print("Computer chose: Scissors")
+            print("You won!")
+            round += 1
+            wins += 1
             
-    elif lukuarvo == "Ydinase":
-        luku = random.randint(1,3)
-        print("Sinä valitsit:", lukuarvo)
-        if luku == 1:
-            print("tietokone valitsi: Jalka")
-            print("Voitit!")
-            kierros += 1
-            voitot += 1
-        elif luku == 2:
-            print("tietokone valitsi: Ydinase")
-            print("Tasapeli!")
-            kierros += 1
-            tasapelit += 1
+    elif number_value == "Paper":
+        value = random.randint(1,3)
+        print("You chose:", number_value)
+        if value == 1:
+            print("Computer chose: Stone")
+            print("You won!")
+            round += 1
+            wins += 1
+        elif value == 2:
+            print("Computer chose: Paper")
+            print("Draw!")
+            round += 1
+            draws += 1
         else:
-            print("tietokone valitsi: Torakka")
-            print("Hävisit!")
-            kierros += 1
-            haviot += 1
+            print("Computer chose: Scissors")
+            print("You lost!")
+            round += 1
+            loses += 1
             
-    elif lukuarvo == "Torakka":
-        luku = random.randint(1,3)
-        print("Sinä valitsit:", lukuarvo)
-        if luku == 1:
-            print("tietokone valitsi: Jalka")
-            print("Hävisit!")
-            kierros += 1
-            haviot += 1
-        elif luku == 2:
-            print("tietokone valitsi: Ydinase")
-            print("Voitit!")
-            kierros += 1
-            voitot += 1
+    elif number_value == "Scissors":
+        value = random.randint(1,3)
+        print("You chose:", number_value)
+        if value == 1:
+            print("Computer chose: Stone")
+            print("You lost!")
+            round += 1
+            loses += 1
+        elif value == 2:
+            print("Computer chose: Paper")
+            print("You won!")
+            round += 1
+            wins += 1
         else:
-            print("tietokone valitsi: Torakka")
-            print("Tasapeli!")
-            kierros += 1
-            tasapelit += 1
+            print("Computer chose: Scissors")
+            print("Draw!")
+            round += 1
+            draws += 1
             
-    elif lukuarvo == "Lopeta":
-        print("Pelasit",kierros,"kierrosta, joista voitit",voitot,"ja pelasit tasan",tasapelit,"peliä.")
+    elif number_value == "quit":
+        print("Played",round,"rounds of which You won",wins,"and you played evenly",draws,"times.")
         break
     else:
         print("")

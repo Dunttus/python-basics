@@ -1,14 +1,14 @@
 # -- coding: cp1252 --
-luku = input("Anna tiedoston nimi: ")
+value = input("Enter file name: ")
     
 try:
-    tiedosto = open(luku, "r")
-    sisalto = tiedosto.read()
-    sisalto = int(sisalto)
-    print("Saatiin tulos", sisalto + 313)
+    file = open(value, "r")
+    contents = file.read()
+    contents = int(contents)
+    print("The result was obtained", contents + 313)
     
 except FileNotFoundError:
-    print("Virheellinen tiedostonnimi")
+    print("Invalid filename")
     
 except Exception:
-    print("Tiedoston sisältö virheellinen!")
+    print("Invalid file content, must be number!")

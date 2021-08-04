@@ -1,11 +1,12 @@
 # -*- coding: cp1252 -*-
 
-import tarkastaja
+import inspector
+
 while True:
-    testattava = input("Anna testattava sana: ")
-    tulos = tarkastaja.testaa(testattava)
-    if tulos == True:
-        print("Antamasi sana kelpaa salasanaksi!")
+    tested = input("Enter the word to test: ")
+    results = inspector.testing(tested)
+    if results == True:
+        print("The word you entered is valid as a password!")
         break
     else:
-        print("Sana ei kelpaa.")
+        print("Invalid input.")

@@ -1,16 +1,16 @@
 # -- coding: cp1252 --
-def tulostaja(sana = "Oletustulostus"):
-    print(sana)
+def printer(word = "Word must be more than 4 letters"):
+    print(word)
 
 def main():
     while True:
-        syote = input("Anna syöte (Lopeta lopettaa): ")
-        if syote == "Lopeta":
+        user_input = input("Type quit to stop \nEnter word: ")
+        if user_input == "quit":
             break
-        elif len(syote) < 5:
-            tulostaja()
+        elif len(user_input) < 5:
+            printer()
         else:
-            tulostaja(syote)
+            printer(user_input)
 
 if __name__ == "__main__":
     main()

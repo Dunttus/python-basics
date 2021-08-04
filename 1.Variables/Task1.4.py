@@ -1,2 +1,2 @@
 # -- coding: cp1252 --
-print("Tämä on usean rivin tulostus:\nTeksti on jaettu usealle riville.\nNimi:\tPetteri\nAmmatti:\tKartturi")
+print("This is a multi-line print:\nThe text is divided into several lines.\nuser: \ home \ joni")

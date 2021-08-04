@@ -1,6 +1,6 @@
 # -- coding: cp1252 --
-arvo1 = input("Anna luku: ")
-arvo1 = int(arvo1)
+value1 = input("Enter the number: ")
+value1 = int(value1)
 
-if arvo1%2 == 0:
-    print("Antamasi luku oli parillinen.")
+if value1%2 == 0:
+    print("The number you entered was even.")

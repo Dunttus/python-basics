@@ -1,9 +1,9 @@
 # -- coding: cp1252 --
-def tulostaja():
-    print("Tulostusfunktio!")
+def printer():
+    print("Print function!")
 
 def main():
-    tulostaja()
+    printer()
 
 if __name__ == "__main__":
     main()

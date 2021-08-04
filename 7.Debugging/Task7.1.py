@@ -1,10 +1,10 @@
 # -- coding: cp1252 --
 
-luku = input("Anna luku: ")
+value = input("Enter number: ")
 
 try:
-    luku = int(luku)
-    print("Syöte oli kelvollinen.")
+    value = int(value)
+    print("The input was valid.")
 
 except Exception:
-    print("Virheellinen syöte!")
+    print("Invalid input!")

@@ -1,6 +1,6 @@
 # -- coding: cp1252 --
-arvo1 = 10.6411
-arvo2 = "Merkkijono"
-arvo1 = int(arvo1)
-print("Kokonaislukumuunnos ei osaa pyöristää: ", arvo1)
-print("Merkkijonon kertominen tuottaa toistoa: ", arvo2*2)
+value1 = 10.6411
+value2 = "stringvalue"
+value1 = int(value1)
+print("Integer transformation cannot round: ", value1)
+print("Multiplying a string produces repetition: ", value2*2)

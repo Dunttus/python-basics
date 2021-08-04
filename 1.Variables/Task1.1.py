@@ -1,3 +1,3 @@
 # -*- coding: cp1252 -*-
-muuttuja = "merkkijonosisältöä"
-print("Muuttujaan muuttuja on tallennettu ", muuttuja+".", sep="")
+variable_name = "stringvalue"
+print("Variable saved as ", variable_name+".", sep="")

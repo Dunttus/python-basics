@@ -2,28 +2,28 @@
 import time
 
 while True:
-    print("(1) Lue muistikirjaa\n(2) Lis‰‰ merkint‰\n(3) Tyhjenn‰ muistikirja\n(4)Lopeta\n")   
-    arvo1 = input("Mit‰ haluat tehd‰?: ")
-    tiedosto = open("muistio.txt","r")
-    sisalto = tiedosto.read()
+    print("(1) Read notes\n(2) Add an entry\n(3) Clear notebook\n(4)Quit\n")   
+    value1 = input("What do you want to do?: ")
+    file = open("memo.txt","r")
+    contents = file.read()
     
-    if arvo1 == "1":      
-        print(sisalto)
-    elif arvo1 == "2":
-        tiedosto.close()
-        lukuarvo = input("Kirjoita uusi merkint‰:")
-        lukuarvo = lukuarvo + ":::" + time.strftime("%X %x") + "\n"
-        tiedosto = open("muistio.txt","a")
-        kirjoita = tiedosto.write(lukuarvo)
-        tiedosto.close()
-    elif arvo1 == "3":
-        tiedosto.close()
-        tiedosto = open("muistio.txt","w")
-        print("Muistio tyhjennetty.")
-        tiedosto.close()
-    elif arvo1 == "4":
-        print("Lopetetaan.")
-        tiedosto.close()
+    if value1 == "1":      
+        print(contents)
+    elif value1 == "2":
+        file.close()
+        number_value = input("Add new entry:")
+        number_value = number_value + ":::" + time.strftime("%X %x") + "\n"
+        file = open("memo.txt","a")
+        kirjoita = file.write(number_value)
+        file.close()
+    elif value1 == "3":
+        file.close()
+        file = open("memo.txt","w")
+        print("Notebook cleared.")
+        file.close()
+    elif value1 == "4":
+        print("Quitting.")
+        file.close()
         break
     else:
-        print("Tuntematon valinta.")
+        print("Unknown selection.")

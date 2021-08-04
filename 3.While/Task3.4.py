@@ -1,31 +1,31 @@
 # -- coding: cp1252 --
-jatka = True
-luku = 0
+continuation = True
+number = 0
 
-while jatka:
-    if luku ==0:
-        arvo1 = int(input("Anna ensimmäinen luku: "))
-        arvo2 = int(input("Anna toinen luku: "))
-        luku +=1
-    elif luku >= 1:
-        arvo1 = int(input("Anna uusi ensimmäinen luku: "))
-        arvo2 = int(input("Anna uusi toinen luku: "))
+while continuation:
+    if number ==0:
+        value1 = int(input("Enter first number: "))
+        value2 = int(input("Enter second number: "))
+        number +=1
+    elif number >= 1:
+        value1 = int(input("Enter new first number: "))
+        value2 = int(input("Enter new second number: "))
     while True:
-        print("(1) +\n(2) -\n(3) *\n(4) /\n(5)Vaihda luvut\n(6)Lopeta")
-        print("Valitut luvut:", arvo1, arvo2)
-        arvo3 = input("Tee valinta (1-6): ")
-        if arvo3 == "1":
-            print("Tulos on: ",arvo1+arvo2)
-        elif arvo3 == "2":
-            print("Tulos on: ",arvo1-arvo2)
-        elif arvo3 == "3":
-            print("Tulos on: ",arvo1*arvo2)
-        elif arvo3 == "4":
-            print("Tulos on: ",arvo1/arvo2)
-        elif arvo3 == "5":
+        print("(1) +\n(2) -\n(3) *\n(4) /\n(5)Change the numbers\n(6)Quit")
+        print("Valitut luvut:", value1, value2)
+        value3 = input("Select number (1-6): ")
+        if value3 == "1":
+            print("Result is: ",value1+value2)
+        elif value3 == "2":
+            print("Result is: ",value1-value2)
+        elif value3 == "3":
+            print("Result is: ",value1*value2)
+        elif value3 == "4":
+            print("Result is: ",value1/value2)
+        elif value3 == "5":
             break
-        elif arvo3 == "6":
-            jatka = False
+        elif value3 == "6":
+            continuation = False
             break
         else:
-            print("Valintaa ei tunnistettu.")
+            print("Selection not recognized.")

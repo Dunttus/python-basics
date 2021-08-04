@@ -1,4 +1,4 @@
 # -*- coding: cp1252 -*-
-arvo1 = 1000
-arvo2 = 24
-print("Laskutoimituksen tulos on: ", (arvo1+arvo2+15)**2)
+value1 = 1000
+value2 = 24
+print("The result of the calculation is: ", (value1+value2+15)**2)

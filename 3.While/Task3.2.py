@@ -1,8 +1,8 @@
 # -- coding: cp1252 --
 while True:
-    arvo1 = input("Kirjoita jotain:")
-    if arvo1 == "lopeta":
-        print("Lopetit ohjelman.")
+    value1 = input("Write quit to stop \nWrite something: ")
+    if value1 == "quit":
+        print("You quit the program.")
         break
     else:
-        print(arvo1)
+        print(value1)

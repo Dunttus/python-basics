@@ -1,13 +1,13 @@
 # -- coding: cp1252 --
-lukuarvo = input("Minkäniminen tiedosto luodaan?:")
+file_name = input("Enter file name to be created: ")
 
-tiedosto = open(lukuarvo,"a")
-tiedosto.close()
+file = open(file_name,"a")
+file.close()
 
-lukuarvo2 = input("Mitä kirjoitetaan tiedostoon?:")
+file_name2 = input("What is written to the file: ")
 
-tiedosto = open(lukuarvo,"w")
-tiedosto.write(lukuarvo2)
-tiedosto.close()
+file = open(file_name,"w")
+file.write(file_name2)
+file.close()
 
-print("Luotiin tiedosto",lukuarvo, "ja siihen tallennettiin teksti:", lukuarvo2)
+print("File created",file_name, "and text writen in it:", file_name2)

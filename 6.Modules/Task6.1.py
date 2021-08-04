@@ -1,10 +1,10 @@
 # -*- coding: cp1252 -*-
 import random
 
-print("Heitetään kolikkoa viidesti:")
+print("Throw a coin five times:")
 for i in range(5):
-    luku = random.randint(0,1)
-    if luku == 0:
-        print("Klaava!")
+    number = random.randint(0,1)
+    if number == 0:
+        print("Tails!")
     else:
-        print("Kruuna!")
+        print("Crowns!")

@@ -1,12 +1,12 @@
 # -- coding: cp1252 --
-nimi1 = input("Anna nimi: ")
+name1 = input("Enter name: ")
 
-if nimi1 == "Erkki":
-	salasana1 = input("Anna salasana: ")
+if name1 == "Joni":
+	secret_value1 = input("Enter password: ")
 	
-	if salasana1 == "Esimerkki":
-		print("Salasana ja nimi oli oikein!")
+	if secret_value1 == "password":
+		print("The password and name correct!")
 	else:
-		print("Salasana oli väärin.")
+		print("Password incorrect.")
 else:
-	print("Nimi oli väärin.")
+	print("Name incorrect.")

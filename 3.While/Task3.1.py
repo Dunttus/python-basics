@@ -1,6 +1,6 @@
 # -- coding: cp1252 --
-arvo1 = 0
+value1 = 0
 
-while arvo1 < 5:
-    print("Olemme kierroksella", arvo1)
-    arvo1 = arvo1 +1
+while value1 < 5:
+    print("Loop round", value1)
+    value1 = value1 +1

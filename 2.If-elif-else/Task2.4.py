@@ -1,12 +1,12 @@
 # -- coding: cp1252 --
-arvo1 = input("Anna luku: ")
-arvo2 = input("Anna toinen luku: ")
-arvo1 = int(arvo1)
-arvo2 = int(arvo2)
+value1 = input("Enter the first number: ")
+value2 = input("Enter the second number: ")
+value1 = int(value1)
+value2 = int(value2)
 
-if arvo1%2 == 0 and arvo2%2 == 0:
-    print("Molemmat luvut ovat parillisia.")
-elif arvo1%2 != 0 and arvo2%2 != 0:
-    print("Molemmat luvut ovat parittomia.")
+if value1%2 == 0 and value2%2 == 0:
+    print("Both numbers are even.")
+elif value1%2 != 0 and value2%2 != 0:
+    print("Both numbers are odd.")
 else:
-    print("Toinen luku on parillinen.")
+    print("The second number is even.")

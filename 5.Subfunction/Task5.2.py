@@ -1,11 +1,11 @@
 # -- coding: cp1252 --
-def toinenpotenssi(luku1):
-    lasku = luku1**2
-    return lasku
+def second_power(value1):
+    counting = value1**2
+    return counting
 
 def main():
-    luku1 = int(input("Anna lukuarvo: "))
-    print("Toinen potenssi on ", toinenpotenssi(luku1))
+    value1 = int(input("Enter numeric value: "))
+    print("The second power is ", second_power(value1))
 
 if __name__ == "__main__":
     main()

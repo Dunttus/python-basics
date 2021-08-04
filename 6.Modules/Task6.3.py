@@ -2,4 +2,4 @@
 
 import moduuli
 
-moduuli.tulosta("Esimerkkirivi")
+moduuli.printing("Esimerkkirivi")

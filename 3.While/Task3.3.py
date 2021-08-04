@@ -1,12 +1,11 @@
 # -- coding: cp1252 --
-arvo1 = int(input("Kuinka monta kierrosta?:"))
-kierros = 0
-laskuri = 0
+value1 = int(input("How many rounds?: "))
+round = 0
+counter = 0
 
-for kierros in range(arvo1):
+for round in range(value1):
 
-    laskuri = laskuri + kierros
-    kierros = kierros + 1
+    counter = counter + round
+    round = round + 1
     
-print("Kertymäksi saatiin:", laskuri)
-    
+print("Accumulation was obtained:", counter)

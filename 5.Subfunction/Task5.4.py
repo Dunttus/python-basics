@@ -1,16 +1,16 @@
 # -- coding: cp1252 --
-def tulostaja(sana):
-    print ("Antamasi syöte oli",len(sana),"merkkiä pitkä.") 
+def printer(word):
+    print ("Input was",len(word),"characters long.") 
 
 def main():
     while True:
-        syote = input("Anna syöte (Lopeta lopettaa): ")
-        if syote == "Lopeta":
+        user_input = input("Write quit to stop \nEnter word: ")
+        if user_input == "quit":
             break
-        elif syote == "":
-            print("Et antanut syötettä")
+        elif user_input == "":
+            print("Input was not given")
         else:
-            tulostaja(syote)
+            printer(user_input)
 
 if __name__ == "__main__":
     main()
