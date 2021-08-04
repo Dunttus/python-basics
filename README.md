@@ -11,9 +11,9 @@
 
 
 ## Photos
-#### 7.3 RPS-Game
+#### 6.2 RPS-Game
 ![RPS-Game](/img/t6k2.png)
-#### 7.3 Calculator
+#### 6.5 Calculator
 ![Calculator](/img/t6k5.png)
 #### 7.4 Notebook
 ![Notebook](/img/t7k4.png)
