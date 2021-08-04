@@ -11,7 +11,7 @@
 
 
 ## Photos
-#### 7.3 Calculator
+#### 7.3 RPS-Game
 ![RPS-Game](/img/t6k2.png)
 #### 7.3 Calculator
 ![Calculator](/img/t6k5.png)
