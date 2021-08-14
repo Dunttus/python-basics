@@ -8,7 +8,7 @@
 **5 Subfunction** - Making subfuntion for mainfuntion. \
 **6 Modules** - Python modules demostrated with notebook app. \
 **7 Debugging** - Calculator, notebook app and basics of debugging. \
-
+**8 Requests** - Pulling json data from github api and searhing for github pages. \
 
 ## Photos
 #### 6.2 RPS-Game
